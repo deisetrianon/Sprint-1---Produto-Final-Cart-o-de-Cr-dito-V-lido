@@ -17,7 +17,7 @@
 
   03) Utilizei outro método "**for**" para identificar os números que ocupam posições ímpares no array. São identificados no código como "**oddPositions**".
 
-  04) Criei a variável "**sumOfNumbers**" para fazer a soma final de todos os números. Se a soma for divisível por 10, o usuário recebe a mensagem de que o seu cartão de crédito é *válido*. Caso contrário, recebe a mensagem de que o seu cartão de crédito *não é válido*. 
+  04) Criei a variável "**sumOfNumbers**" para fazer a soma dos números das posições ímpares com os novos números das posições pares. Se a soma for divisível por 10, o usuário recebe a mensagem de que o seu cartão de crédito é *válido*. Caso contrário, recebe a mensagem de que o seu cartão de crédito *não é válido*. 
 
 
 
