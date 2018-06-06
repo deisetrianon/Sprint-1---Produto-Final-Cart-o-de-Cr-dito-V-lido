@@ -18,7 +18,8 @@
   03) Fiz a soma final ("**sumOfNumbers**") de todos os números das posições pares e ímpares ("**oddPositions**"). Se a soma for divisível por 10, o usuário recebe a mensagem de que o seu cartão de crédito é *válido*. Caso contrário, recebe a mensagem de que o seu cartão de crédito *não é válido*. 
 
 
-
+## Fluxograma
+![Fluxograma] (Sprint1-Produto-Final-Cartao-de-Credito/Fluxograma-Cartao-de-Credito.png)
 
 
     
