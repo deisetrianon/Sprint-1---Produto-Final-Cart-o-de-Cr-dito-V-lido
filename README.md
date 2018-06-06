@@ -15,7 +15,7 @@
     - Se o número ocupar uma posição par, ele é multiplicado por 2 e, se o resultado dessa multiplicação for maior ou igual a 10, os dígitos do resultado são somados (equivalente a subtrair o resultado por 9). É identificado no código como "**evenPositions10**";
     - Se o número ocupar uma posição par e, o resultado da multiplicação dele por 2 não for maior ou igual a 10, apenas a multiplicação é feita. É identificado no código como "**otherEvenPositions**";
 
-  03) Criei a variável "**sumOfNumbers**" para fazer a soma dos números das posições ímpares (identificados como "**oddNumbers**")com os novos números das posições pares. Se a soma for divisível por 10, o usuário recebe a mensagem de que o seu cartão de crédito é *válido*. Caso contrário, recebe a mensagem de que o seu cartão de crédito *não é válido*. 
+  03) Criei a variável "**sumOfNumbers**" para fazer a soma dos números das posições ímpares (identificados como "**oddNumbers**") com os novos números das posições pares. Se a soma for divisível por 10, o usuário recebe a mensagem de que o seu cartão de crédito é *válido*. Caso contrário, recebe a mensagem de que o seu cartão de crédito *não é válido*. 
 
 
 
