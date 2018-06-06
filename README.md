@@ -19,7 +19,7 @@
 
 
 ## Fluxograma
-![Fluxograma] (Sprint1-Produto-Final-Cartao-de-Credito/Fluxograma-Cartao-de-Credito.png)
+![Fluxograma](Fluxograma-Cartao-de-Credito.png)
 
 
     
