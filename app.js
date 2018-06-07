@@ -1,39 +1,34 @@
 var insertCardNumbers = prompt("Insira o número do seu cartão de crédito.");
 if (insertCardNumbers === "") {
-  alert("Por favor, insira o número do seu cartão de crédito.");
+  alert("Campo vazio! Tente novamente.");
 } else {
   isValidCard(insertCardNumbers);
 }
 
-function isValidCard(insertCardNumbers) {
-  var reverseCardNumbers = [];
+function isValidCard(insertCardNumbers){
+  var reverseCardNumbers = []; 
+  var finalSum = 0; 
+  
   for (i = 0; i < insertCardNumbers.length; i++) {
     reverseCardNumbers.unshift(parseInt(insertCardNumbers[i]));
   }
 
-  for (j = 1; j < reverseCardNumbers.length; j = j + 2) {
-    var evenPositions10 = 0;
-    var otherEvenPositions = 0;
-
-    if (reverseCardNumbers[j] * 2 >= 10) {
-       reverseCardNumbers[j] - 9;
-       evenPositions10 += reverseCardNumbers[j];
-    } else {
-      otherEvenPositions += reverseCardNumbers[j] * 2;
+  for (j = 0; j < reverseCardNumbers.length; j = j + 2) {
+    if (j % 2 === 0) {
+    reverseCardNumbers[j] = reverseCardNumbers[j] * 2;
+      if (reverseCardNumbers[j] >= 10) {
+      reverseCardNumbers[j] = reverseCardNumbers[j] - 9;
+      }
     }
 
-    for (k = 0; k < reverseCardNumbers.length; k++) {
-      var oddPositions = 0;
-      oddPositions += reverseCardNumbers[k];
-    }
-
-    var sumOfNumbers = evenPositions10 + otherEvenPositions + oddPositions;
-
-    if (sumOfNumbers % 10 === 0) {
-      return alert("Seu cartão de crédito é válido.");
-    } else {
-      return alert("Seu cartão de crédito não é válido.");
-    }
-
+    finalSum += reverseCardNumbers[j];
   }
+
+  if (finalSum % 10 === 0) {
+    return alert("O seu cartão de crédito é válido");
+  } else {
+    return alert("O seu cartão de crédito é inválido");
+  }
+ 
+
 }
