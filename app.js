@@ -1,6 +1,6 @@
 do {
   insertNumber = prompt('Insert the credit card number');
-} while (!insertNumber || typeof parseInt(insertNumber) !== 'number');
+} while (!insertNumber || typeof insertNumber !== 'number');
 isValidCard(insertNumber);
 
 function isValidCard(cardnumber) {
